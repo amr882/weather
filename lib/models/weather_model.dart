@@ -2,12 +2,18 @@ class WeatherModel {
   final double temp;
   final String state;
   final String city;
-  final String conditionImage;
+  final int humidity;
+  final double windSpeed;
+  final String country;
+  final int cloud;
   WeatherModel({
+    required this.cloud,
+    required this.humidity,
+    required this.country,
+    required this.windSpeed,
     required this.city,
     required this.state,
     required this.temp,
-    required this.conditionImage,
   });
 
   factory WeatherModel.fromJson(Map<String, dynamic> json) {
@@ -15,6 +21,9 @@ class WeatherModel {
         city: json["location"]["name"],
         temp: json["current"]["temp_c"],
         state: json["current"]["condition"]["text"],
-        conditionImage: json["current"]["condition"]["icon"]);
+        humidity: json["current"]["humidity"],
+        windSpeed: json["current"]["wind_kph"],
+        country: json["location"]["country"],
+        cloud: json["current"]["cloud"]);
   }
 }
