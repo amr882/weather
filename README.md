@@ -5,10 +5,7 @@ A new Flutter project.
 ## Getting Started
 
 This project is a starting point for a Flutter application.
-![IMAGE_DESCRIPTION](screenshots/weather 2.png)
-
-
-
+![IMAGE_DESCRIPTION](https://github.com/amr882/weather/blob/main/screenshots/weather%202.png?raw=true)
 ![IMAGE_DESCRIPTION](screenshots/21f82871-6769-4562-95d6-e575673aab61.jpg)
 
 
